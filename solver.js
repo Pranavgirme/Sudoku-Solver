@@ -44,6 +44,9 @@ const getChoices = (board, index) => {
         if (acceptable(board, index, value)) {
             choices.push(value)
         }
+        else{
+            clearButton.addEventListener('click', () => window.location.reload(true))
+        }
     }
     return choices
 }
